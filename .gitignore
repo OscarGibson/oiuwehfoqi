@@ -1,0 +1,7 @@
+venv37/
+db.sqlite3
+test/
+plugins/
+static/
+__pycache__/
+*.pyc
