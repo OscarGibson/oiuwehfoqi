@@ -1,10 +1,14 @@
-from django.shortcuts import render, redirect
-from .models import Page
 import os
+
+from django.shortcuts import render, redirect
 from django.conf import settings
+
+from . import login_required
+from .models import Page
 
 PATH_TEMPLATE = 'static_generator/templates/html_pages/%s.html'
 
+@login_required
 def edit(request, page_name= None):
 	if request.method == 'POST':
 		if page_name:
@@ -68,7 +72,7 @@ def edit(request, page_name= None):
 	else:
 		return render(request, 'default_pages/method_not_allowed.html', {})
 
-
+@login_required
 def get_all(request):
 	return render(
 		request,
