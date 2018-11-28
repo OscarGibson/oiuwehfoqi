@@ -1,3 +1,4 @@
+import os
 from django.db import models
 
 class Page(models.Model):
@@ -6,3 +7,7 @@ class Page(models.Model):
 
 	def __str__(self):
 		return self.name
+
+	@property
+	def html(self):
+		return open(self.path, 'r').read()

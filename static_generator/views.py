@@ -54,7 +54,7 @@ def edit(request, page_name= None):
 			page = Page.objects.filter(name= page_name).first()
 			if page:
 				name = page.name
-				html = open(page.path, 'r').read()
+				html = page.html
 				page_id = page.id
 			else:
 				name, html, page_id = page_name, '', ''
