@@ -1,147 +1,1076 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Pricing example for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
-  </head>
-  <body>
-  	<style type="text/css">
-  		html {
-		  font-size: 14px;
-		}
-		@media (min-width: 768px) {
-		  html {
-		    font-size: 16px;
-		  }
-		}
+    <title>Squibler - Book Writing Software | How to Write a Book</title>
+    <base href="/" >
+   <link rel="shortcut icon" href="https://storage.googleapis.com/squibler_bucket/main/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="height=device-height, width=device-width, user-scalable=0" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="1035784773457-ngm3344dnp72v1ntcrc1d7h0mepqob80.apps.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/squibler_bucket/main/css/app.css">
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+    <script>
+      var test;
+        !function () {
+            var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"]; analytics.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics } }; for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; analytics[e] = analytics.factory(e) } analytics.load = function (t, e) { var n = document.createElement("script"); n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.1.0";
+                analytics.load("2e75niFI0wCFJYBaJgh4lSW2jHSQtZfw");
+                analytics.identify(localStorage.getItem('userId'));
+            }
+        }();
+    </script>
 
-		.container {
-		  max-width: 960px;
-		}
+  
+    <style type="text/css">
+        #iubenda-cs-banner {
+            bottom: 0px !important;
+            left: 0px !important;
+            position: fixed !important;
+            width: 100% !important;
+            z-index: 99999998 !important;
+            background-color: black;
+        }
 
-		.pricing-header {
-		  max-width: 700px;
-		}
+        .iubenda-cs-content {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+            width: auto;
+            font-family: Helvetica, Arial, FreeSans, sans-serif;
+            font-size: 14px;
+            background: #000;
+            color: #fff;
+        }
 
-		.card-deck .card {
-		  min-width: 220px;
-		}
-  	</style>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Ostap's company</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a>
+        .iubenda-cs-rationale {
+            max-width: 900px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .iubenda-banner-content>p {
+            font-family: Helvetica, Arial, FreeSans, sans-serif;
+            line-height: 1.5;
+        }
+
+        .iubenda-cs-close-btn {
+            margin: 0;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+        }
+
+        .iubenda-cs-cookie-policy-lnk {
+            text-decoration: underline;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 900;
+        }
+    </style>
+    <script type="text/javascript"> var _iub = _iub || []; _iub.csConfiguration = { "lang": "en", "siteId": 1411530, "cookiePolicyId": 69329368, "banner": { "slideDown": false, "applyStyles": false, "textColor": "black", "backgroundColor": "white" } }; </script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
+</head>
+
+<body>
+    <style>
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            .navbar-expand-md .navbar-toggler {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        .Logo__Main {
+            background-image: url(https://storage.googleapis.com/squibler_bucket/main/img/logo-squibler-with-text.png);
+            width: 140px;
+            text-indent: -999px;
+        }
+
+        .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .navbar-brand {
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+        }
+
+
+
+
+
+        @media (min-width: 768px) {
+            .navbar-expand-md .navbar-nav {
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+            .navbar-expand-md .navbar-collapse {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+            }
+        }
+
+        .landing {
+            width: 100%;
+            overflow: hidden;
+
+            box-sizing: border-box;
+        }
+
+        .abcRioButtonIcon {
+            display: none;
+        }
+
+        .abcRioButtonBlue {
+            margin: 0 auto;
+            height: 32px;
+            overflow: visible;
+            border: 1px solid #b1b1b1;
+        }
+
+        .landing__header {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 100px;
+        }
+
+        .landing__header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .landing__header-logo-img {
+            width: 30px;
+            height: 30px;
+            background-image: url(https://www.squibler.io/assets/images/logo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .landing__header-logo-text {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #4a4a4a;
+            margin-left: 5px;
+        }
+
+        .landing__header-login {
+            width: 80px;
+            height: 32px;
+            border-radius: 16px;
+            font-family: Montserrat;
+            border: solid 1px #b1b1b1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4a4a4a;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .landing__header-login:focus {
+            outline: none;
+        }
+
+        .landing__container {
+            width: 95%;
+            max-width: 1000px;
+        }
+
+        .landing__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .landing__section.signup {
+            padding-bottom: 265px;
+            background-image: url(https://www.squibler.io/assets/images/landing-signup.png);
+            background-size: 566px 425px;
+            background-position: center bottom -212.5px;
+            background-repeat: no-repeat;
+        }
+
+        .landing__section.signup.footer {
+            padding-bottom: 95px;
+            padding-top: 95px;
+            background-image: none;
+            background-color: #fafbfb;
+            position: relative;
+        }
+
+        .landing__section.signup.footer .landing__text span {
+            font-weight: bold;
+        }
+
+        .landing__section.signup.footer:before {
+            position: absolute;
+            content: '';
+            width: 86px;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%) translateY(-50%);
+            height: 110.1px;
+            background-image: url();
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .landing__section.feedback {
+            background-color: #fafbfb;
+            z-index: 1;
+            padding: 75px 0px;
+        }
+
+        .landing__section.features {
+            padding: 75px 0 150px;
+        }
+
+        .landing__feature-item-separator {
+            position: absolute;
+            width: 5px;
+            height: 357px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #2297a1;
+        }
+
+        .gsign {
+            cursor: pointer;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #4a4a4a;
+            min-width: 180px;
+            max-width: 180px;
+            height: 32px;
+            border-radius: 24px;
+            position: relative;
+        }
+
+        .gsign .g-signin2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .gsign.vertical {
+            margin-left: 0;
+            margin-top: 0;
+            height: 0;
+            overflow: hidden;
+            transition: .3s cubic-bezier(.075, .82, .165, 1);
+        }
+
+        .gsign .icon {
+            display: block;
+            width: 16px;
+            height: 16px;
+            margin-right: 9px;
+            background-image: url('http://crwwgroup.net/wp-content/uploads/2016/09/new-google-favicon-logo.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .landing__signup.active .gsign.vertical {
+            margin: 0 auto;
+            height: 32px;
+            overflow: visible;
+            border: 1px solid #b1b1b1;
+
+        }
+
+        .landing__feature-item {
+            margin-top: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 384px;
+            background-size: 523px 384px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .landing__feature-item.left {
+            padding-right: 630px;
+            background-image: url(https://storage.googleapis.com/squibler_bucket/main/img/ideate-1653x1175.png);
+            background-position: right center;
+        }
+
+        .landing__feature-item.left .landing__feature-item-separator {
+            right: 530px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+        .landing__feature-item.left.export {
+            background-size: 388px 92px;
+            background-image: url(https://www.squibler.io/assets/images/feature-3.png);
+            background-position: right 50px center;
+            height: 210px;
+        }
+
+        .landing__feature-item.left.export .landing__feature-item-separator {
+            height: 210px;
+        }
+
+        .landing__feature-item.right {
+            padding-left: 607px;
+            background-image: url(https://www.squibler.io/assets/images/feature-1.png);
+            background-position: left center;
+        }
+
+        .landing__feature-item.right .landing__feature-item-separator {
+            left: 505px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        .landing__partners {
+            margin-top: 165px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .landing__partner {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .landing__partner_forbes {
+            background-image: url(https://www.squibler.io/assets/images/forbes.svg);
+            width: 112px;
+            height: 28px;
+        }
+
+        .landing__partner_mashable {
+            background-image: url(https://www.squibler.io/assets/images/mashable.svg);
+            width: 156px;
+            height: 28px;
+        }
+
+        .landing__partner_huffpost {
+            background-image: url(https://www.squibler.io/assets/images/huffpost.svg);
+            width: 183px;
+            height: 22px;
+        }
+
+        .landing__partner_nyt {
+            background-image: url(https://www.squibler.io/assets/images/nyt.svg);
+            width: 292px;
+            height: 41px;
+        }
+
+        .landing__partner_inc {
+            background-image: url(https://www.squibler.io/assets/images/inc.svg);
+            width: 79px;
+            height: 25px;
+        }
+
+        .landing__feature-item-title {
+            font-family: Lora;
+            font-size: 32px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #2297a1;
+        }
+
+        .landing__feature-item-text {
+            margin-top: 13px;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: #4a4a4a;
+        }
+
+        .landing__title {
+            margin-top: 18px;
+            font-family: Lora;
+            font-size: 48px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4a4a4a;
+        }
+
+        .landing__title.sm {
+            font-size: 40px;
+        }
+
+        .landing__feedback-items {
+            margin-top: 75px;
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+        }
+
+        .landing__feedback-item-name {
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            text-align: center;
+            color: #2297a1;
+            width: 100%;
+            margin-top: 58px;
+        }
+
+        .landing__feedback-item-info {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4a4a4a;
+        }
+
+        .landing__feedback-item-content {
+            width: 310px;
+            padding: 32px 32px 48px 32px;
+            border-radius: 5px;
+            border-top: 5px solid #2297a1;
+            background-color: #ffffff;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+            font-family: Lora;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4a4a4a;
+            position: relative;
+            min-height: 253px;
+            margin-bottom: 43px;
+            box-sizing: border-box;
+        }
+
+        .landing__feedback-item-content:before {
+            font-family: Lora;
+            content: '“';
+            color: #9b9b9b;
+            font-size: 48px;
+            position: absolute;
+            top: 10px;
+            line-height: 40px;
+            left: 10px;
+        }
+
+        .landing__feedback-item-content:after {
+            font-family: Lora;
+            content: '”';
+            color: #9b9b9b;
+            font-size: 48px;
+            position: absolute;
+            bottom: -13px;
+            line-height: 40px;
+            right: 10px;
+        }
+
+        .landing__feedback-item-photo {
+            width: 86px;
+            height: 86px;
+            border: solid 6px #ffffff;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+        }
+
+        .landing__feedback-item-photo.left {
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        .landing__feedback-item-photo.middle {
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        .landing__feedback-item-photo.right {
+            background-image: url(data:image/jpeg;base64,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);
+        }
+
+        .landing__text {
+            margin-top: 31px;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4a4a4a;
+            padding: 15px 0px 0px;
+            height: 105px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .register {
+            display: flex;
+
+        }
+
+        .landing__signup {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 300;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #4a4a4a;
+        }
+
+        .landing__signup .row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .landing__signup.active .landing__input {
+            margin-right: 13px;
+            width: 212px;
+            padding: 0 20px;
+            border: solid 1px #bfbfbf;
+        }
+
+        .landing__signup.active>span {
+            height: 12px;
+            margin: 10px 0;
+        }
+
+        .landing__signup>span {
+            height: 0px;
+            margin: 0px;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .landing__no-card {
+            margin-top: 18px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 300;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        .landing__input {
+            margin-right: 0px;
+            width: 0px;
+            height: 48px;
+            border-radius: 24px;
+            border: none;
+            padding: 0px;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #9b9b9b;
+            transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .landing__input:focus {
+            outline: none;
+        }
+
+        .landing__input::placeholder {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #9b9b9b;
+        }
+
+        .landing__input.invalid {
+            border-color: #d0021b !important;
+        }
+
+        .landing__error {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #d0021b;
+            text-align: center;
+        }
+
+        .landing__button {
+            justify-content: center;
+            cursor: pointer;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            height: 48px;
+            width: fit-content;
+            border-radius: 24px;
+            background-color: #4a90e2;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+            text-decoration: none;
+            min-width: 103px;
+            box-sizing: border-box;
+
+        }
+
+        .landing__button:focus {
+            outline: none;
+        }
+
+        .landing__button:hover {
+            background-color: #396ead;
+        }
+
+        .loader {
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .loader svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .g-btn-signin .abcRioButton {
+            background-color: transparent;
+            border-radius: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #4a4a4a;
+            min-width: 180px;
+            max-width: 180px;
+            position: relative;
+            transition: .3s cubic-bezier(.075, .82, .165, 1);
+            margin: 0 auto;
+            height: 32px;
+            overflow: visible;
+            border: 1px solid #b1b1b1;
+            box-shadow: none;
+        }
+
+        .copyright.webfooter {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .copyright.webfooter a {
+
+            background-image: none;
+            padding-left: 8px;
+
+
+            font-family: "Helvetica Neue", Helvetica, Arial, FreeSans, sans-serif;
+            padding-left: 20px;
+            vertical-align: top;
+            background-position: 7px 3px;
+            background-position-x: 6px;
+            background-position-y: 2px;
+            padding-left: 20px;
+            text-decoration: none;
+            color: #59636d;
+            -webkit-box-shadow: 0 1px 0 #ebebec;
+            -moz-box-shadow: 0 1px 0 #ebebec;
+            box-shadow: 0 1px 0 #ebebec;
+            -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+            border-top-color: #d0d0d0;
+            border-left-color: #c3c3c3;
+            border-right-color: #c3c3c3;
+            border-bottom-color: #b8b9ba;
+
+            display: inline-block;
+            padding: 0 8px;
+            border: 1px;
+            border-style: solid;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            font-size: 11px;
+            border: 1px solid #d2d3d3;
+            line-height: 18px;
+            font-weight: bold;
+
+        }
+
+        .mob_img {
+            display: none;
+        }
+
+        .nav-item.mob {
+            display: none;
+        }
+
+        .landing__header-login.desk {}
+       @media screen and (max-width: 990px) {
+          .register {
+            display: block;
+
+          }
+       }
+        @media screen and (max-width: 420px) {
+
+            .landing {
+                min-width: unset;
+            }
+            .landing__section.signup {
+                padding-bottom: 50%;
+                background-size: contain;
+                background-position: center bottom -100px;
+            }
+            .landing__header {
+                padding: 0 10px;
+            }
+            .landing__title,
+            .landing__title.sm {
+                font-size: 28px;
+            }
+            .landing__text {
+                padding: 0 10px;
+                font-size: 14px;
+            }
+            .landing__signup {
+                width: 90vw;
+            }
+            .landing__signup .row {
+                flex-direction: column;
+            }
+            .landing__signup .landing__input {
+                margin-right: 0 !important;
+                width: 100% !important;
+                height: 0 !important;
+            }
+            .landing__signup.active .landing__input {
+                margin-top: 10px;
+                height: 48px !important;
+            }
+            .landing__button {
+                margin: 10px auto 0;
+            }
+            .landing__feedback-items {
+                flex-direction: column;
+            }
+            .landing__feedback-item {
+                width: 100%;
+                margin-top: 50px;
+            }
+            .landing__feedback-item-content {
+                width: 100%;
+            }
+            .landing__partners {
+                margin-top: 50px;
+                flex-direction: column;
+            }
+            .landing__partner {
+                margin-top: 20px;
+            }
+            .landing__partner:first-child {
+                margin-top: 0;
+            }
+            .landing__feature-item {
+                padding: 0;
+                width: 100%;
+                background-image: none !important;
+                height: fit-content;
+            }
+            .landing__feature-item.left {
+                padding-right: 0;
+            }
+            .landing__feature-item.right {
+                padding-left: 0;
+            }
+            .landing__feature-item.right .landing__feature-item-title,
+            .landing__feature-item.right .landing__feature-item-text {
+                text-align: right;
+                width: 100%;
+            }
+            .mob_img {
+                display: block;
+                width: auto;
+                max-width: 90%;
+                margin: 20px auto;
+            }
+            .landing__feature-item.left.export {
+                height: 288px;
+            }
+            .nav-item.mob {
+                display: block;
+            }
+            .landing__header-login.desk {
+                display: none;
+            }
+            #navbarCollapse {
+                background: #ccc;
+
+                width: 200px;
+
+                position: absolute;
+
+                right: 0;
+
+                top: 0;
+
+            }
+            .navbar-nav {
+                margin-top: 25px;
+            }
+            .navbar-toggler.close {
+                margin-top: 18px;
+                margin-right: 29px;
+            }
+        }
+    </style>
+    <div class="landing">
+
+        <nav class="navbar navbar-expand-md mb-4 Navbar">
+            <div class="container">
+                <a class="navbar-brand Logo__Main" href="https://www.squibler.io">Squibler</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="https://storage.googleapis.com/squibler_bucket/main/img/mobmenu.png" alt="menu" />
+        </button>
+         
+        <div class="collapse navbar-collapse justify-content-end " id="navbarCollapse ">
+          <button class="navbar-toggler close " type="button " data-toggle="collapse " data-target="#navbarCollapse
+                        " aria-controls="navbarCollapse " aria-expanded="false " aria-label="Toggle navigation ">
+          <img src="https://storage.googleapis.com/squibler_bucket/main/img/mobmenu.png " alt="menu" />
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link Navbar__Link" href="https://www.squibler.io/">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link Navbar__Link" href="https://www.squibler.io/pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link Navbar__Link" href="https://www.squibler.io/about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mob">
+                        <a class="nav-link Navbar__Link" href="https://www.squibler.io/login">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a _ngcontent-c1="" class="landing__header-login desk" ng-reflect-router-link="/login" href="https://www.squibler.io/login">Login</a>
     </div>
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    </nav>
+    <app-boarding (onStart)="boarding = true"></app-boarding>
+    <section class="landing__section feedback">
+        <div class="landing__container">
+            <div class="landing__title sm">Over 5,000 Authors Write with Squibler</div>
+            <div class="landing__feedback-items">
+                <div class="landing__feedback-item">
+                    <div class="landing__feedback-item-content">
+                        I love how I can split screens to organize my notes, then track my progress using visual note cards. It’s like having an
+                        organized cabinet file for my book.
+                        <div class="landing__feedback-item-photo left"> </div>
+                    </div>
+                    <div class="landing__feedback-item-name">Jeniffer Miller</div>
+                    <div class="landing__feedback-item-info">— 3X Best-Selling Author</div>
+                </div>
+                <div class="landing__feedback-item">
+                    <div class="landing__feedback-item-content">
+                        Using the grammar checker feature has made my editor happier. Plus, I can instantly share my work with him using Squibler’s
+                        sharing feature.
+                        <div class="landing__feedback-item-photo middle"> </div>
+                    </div>
+                    <div class="landing__feedback-item-name">Josh Fechter</div>
+                    <div class="landing__feedback-item-info">– 2X Top Quora Writer, 5X Author</div>
+                </div>
+                <div class="landing__feedback-item">
+                    <div class="landing__feedback-item-content">
+                        Squibler helped me write my book in 30 days. It’s like having a coach every step of the way until you finish your book.
+                        <div class="landing__feedback-item-photo right"></div>
+                    </div>
+                    <div class="landing__feedback-item-name">Laura Walker</div>
+                    <div class="landing__feedback-item-info">Fiction Storyteller</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="landing__section features">
+        <div class="landing__container">
+            <div class="landing__title sm">Discover the many reasons
+                <br>you write books faster with Squibler</div>
+            <div class="landing__feature-item left item-1">
+                <div class="landing__feature-item-title">Ideate</div>
+                <div class="landing__feature-item-text">Store all your ideas without ever losing them, then filter by tags. Remember, every book starts with a sentence.
+                    Every sentence starts with an idea.</div>
+                <img class="mob_img" style="box-shadow: 0px 0px 4px rgba(0,0,0,0.2);" src="https://storage.googleapis.com/squibler_bucket/main/img/ideate-1653x1175.png">
+                <div class="landing__feature-item-separator"></div>
+            </div>
+            <div class="landing__feature-item right item-1">
+                <div class="landing__feature-item-title">Outline</div>
+                <div class="landing__feature-item-text">Store all your chapters, scenes, and notes safely. Then, drag and drop them into the right place. </div>
+                <img class="mob_img" src="https://www.squibler.io/assets/images/feature-1.png">
+                <div class="landing__feature-item-separator"></div>
+            </div>
+
+            <div class="landing__feature-item left export">
+                <div class="landing__feature-item-title">Publish</div>
+                <div class="landing__feature-item-text">Share your book with an editor. When it’s ready, export and preview your files for Kindle, PDF, or print
+                    while keeping perfect image resolution.</div>
+                <img class="mob_img" src="https://www.squibler.io/assets/images/feature-3.png">
+                <div class="landing__feature-item-separator"></div>
+            </div>
+            <div class="landing__partners">
+                <div class="landing__partner landing__partner_forbes"></div>
+                <div class="landing__partner landing__partner_mashable"></div>
+                <div class="landing__partner landing__partner_huffpost"></div>
+                <div class="landing__partner landing__partner_nyt"></div>
+                <div class="landing__partner landing__partner_inc"></div>
+            </div>
+        </div>
+    </section>
+    <app-boarding-footer></app-boarding-footer>
+    <section class="landing__section copyright webfooter">
+        <div class="landing__container" style="text-align:center;">
+            <a href="https://www.iubenda.com/privacy-policy/69329368/cookie-policy" class="iubenda-white no-brand iubenda-embed " title="Cookie Policy">Cookie Policy</a>&nbsp;&nbsp;
+            <a href="https://www.iubenda.com/privacy-policy/69329368" class="iubenda-white no-brand iubenda-embed " title="Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;
+            <a href="https://www.squibler.io/terms-of-service" class="">Terms Of Service</a>
+        </div>
+    </section>
     </div>
-    <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-          </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://storage.googleapis.com/squibler_bucket/main/js/app.js"></script>
+    <script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+</body>
 
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-          <div class="col-12 col-md">
-            <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
 </html>

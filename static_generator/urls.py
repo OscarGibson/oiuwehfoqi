@@ -23,5 +23,5 @@ urlpatterns = [
     path('edit', edit, name= "edit"),
     path('list', get_all, name= "list of pages"),
     path('admin/', admin.site.urls),
-    path('<page_name>', get, name= "page"),
+    path('static-pages/<page_name>', get, name= "page"),
 ]

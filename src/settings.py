@@ -25,7 +25,7 @@ SECRET_KEY = '%#soc29vg7cesu8)b#7p8y9dnd@*)rrk9xi(&e3y*-+uc4ymmh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ('35.237.24.23','www.squibler.io','squibler.io')
 
 
 # Application definition
@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'static_generator',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -119,3 +121,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/testlviv9/static_pages/static'
+
+CORS_ORIGIN_WHITELIST = (
+    'www.squibler.io',
+    'dev.squibler.io',
+    'localhost:4200',
+    '127.0.0.1:4200'
+)
+
+CORS_ORIGIN_ALLOW_ALL = True
+

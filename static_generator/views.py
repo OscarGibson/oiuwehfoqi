@@ -2,6 +2,7 @@ import os
 
 from django.shortcuts import render, redirect
 from django.conf import settings
+from django.views.decorators.clickjacking import xframe_options_exempt
 
 from . import login_required
 from .models import Page
@@ -54,7 +55,7 @@ def edit(request, page_name= None):
 			page = Page.objects.filter(name= page_name).first()
 			if page:
 				name = page.name
-				html = page.html
+				html = open(page.path, 'r').read()
 				page_id = page.id
 			else:
 				name, html, page_id = page_name, '', ''
@@ -85,6 +86,7 @@ def get_all(request):
 def index(request):
 	return render(request, 'html_pages/index.html', {})
 
+@xframe_options_exempt
 def get(request, page_name):
 
 	if request.method == 'GET':

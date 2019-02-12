@@ -1,7 +1,8 @@
-venv37/
+venv*/
 db.sqlite3
 test/
 plugins/
 static/
 __pycache__/
 *.pyc
+static_generator/templates/html_pages/
